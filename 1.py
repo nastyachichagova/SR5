@@ -11,7 +11,10 @@ except ValueError:
     
 a=b=c=0
 k=1
-x1=x2=max(x, -x)
+if x >= 0:
+    x1 = x2 = x
+else:
+    x1 = x2 -x
 
 if (x1>9):                  #находим количество цифр в числе
     while x1 // 10 != 0:
